@@ -7,7 +7,7 @@ class CoordinateService
     response = conn.get('/geocoding/v1/address') do |req|
       req.params['key'] = ENV['map_quest_key']
       req.params['location'] = location
-    end 
+    end
     JSON.parse(response.body, symbolize_names: true)
   end
 end
