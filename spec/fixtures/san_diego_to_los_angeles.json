@@ -1,0 +1,382 @@
+{
+    "route": {
+        "hasTollRoad": false,
+        "hasBridge": true,
+        "boundingBox": {
+            "lr": {
+                "lng": -117.163818,
+                "lat": 32.715759
+            },
+            "ul": {
+                "lng": -118.244469,
+                "lat": 34.057156
+            }
+        },
+        "distance": 120.494,
+        "hasTimedRestriction": false,
+        "hasTunnel": false,
+        "hasHighway": true,
+        "computedWaypoints": [],
+        "routeError": {
+            "errorCode": -400,
+            "message": ""
+        },
+        "formattedTime": "02:01:04",
+        "sessionId": "6266d977-0358-6750-02b4-359b-0a8582d8a371",
+        "hasAccessRestriction": false,
+        "realTime": 8229,
+        "hasSeasonalClosure": false,
+        "hasCountryCross": false,
+        "fuelUsed": 5.39,
+        "legs": [
+            {
+                "hasTollRoad": false,
+                "hasBridge": true,
+                "destNarrative": "Proceed to LOS ANGELES, CA.",
+                "distance": 120.494,
+                "hasTimedRestriction": false,
+                "hasTunnel": false,
+                "hasHighway": true,
+                "index": 0,
+                "formattedTime": "02:01:04",
+                "origIndex": 1,
+                "hasAccessRestriction": false,
+                "hasSeasonalClosure": false,
+                "hasCountryCross": false,
+                "roadGradeStrategy": [
+                    []
+                ],
+                "destIndex": 4,
+                "time": 7264,
+                "hasUnpaved": false,
+                "origNarrative": "Go north on I-5 N.",
+                "maneuvers": [
+                    {
+                        "distance": 0.573,
+                        "streets": [
+                            "1St Ave"
+                        ],
+                        "narrative": "Start out going north on 1St Ave toward C St.",
+                        "turnType": 0,
+                        "startPoint": {
+                            "lng": -117.163818,
+                            "lat": 32.715759
+                        },
+                        "index": 0,
+                        "formattedTime": "00:01:40",
+                        "directionName": "North",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=32.71575927734375,-117.163818359375|marker-1||32.72406768798828,-117.16387939453125|marker-2||&center=32.719913482666016,-117.16384887695312&defaultMarker=none&zoom=10&rand=-1602992899&session=6266d977-0358-6750-02b4-359b-0a8582d8a371",
+                        "transportMode": "AUTO",
+                        "attributes": 1024,
+                        "time": 100,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif",
+                        "direction": 1
+                    },
+                    {
+                        "distance": 85.836,
+                        "streets": [
+                            "I-5 N"
+                        ],
+                        "narrative": "Merge onto I-5 N via the ramp on the left.",
+                        "turnType": 11,
+                        "startPoint": {
+                            "lng": -117.163879,
+                            "lat": 32.724068
+                        },
+                        "index": 1,
+                        "formattedTime": "01:24:06",
+                        "directionName": "North",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "5",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=5&d=NORTH",
+                                "direction": 1
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=32.72406768798828,-117.16387939453125|marker-2||33.739742279052734,-117.83089447021484|marker-3||&center=33.23190498352051,-117.49738693237305&defaultMarker=none&zoom=3&rand=-1602992899&session=6266d977-0358-6750-02b4-359b-0a8582d8a371",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 5046,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_left_sm.gif",
+                        "direction": 1
+                    },
+                    {
+                        "distance": 30.092,
+                        "streets": [
+                            "I-5 N"
+                        ],
+                        "narrative": "Keep left to take I-5 N toward Santa Ana/Newport Beach/CA-55 S.",
+                        "turnType": 7,
+                        "startPoint": {
+                            "lng": -117.830894,
+                            "lat": 33.739742
+                        },
+                        "index": 2,
+                        "formattedTime": "00:30:00",
+                        "directionName": "North",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "5",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=5&d=NORTH",
+                                "direction": 1
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=33.739742279052734,-117.83089447021484|marker-3||34.025482177734375,-118.20572662353516|marker-4||&center=33.882612228393555,-118.018310546875&defaultMarker=none&zoom=5&rand=-1602992899&session=6266d977-0358-6750-02b4-359b-0a8582d8a371",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 1800,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_slight_left_sm.gif",
+                        "direction": 1
+                    },
+                    {
+                        "distance": 3.421,
+                        "streets": [
+                            "US-101 N"
+                        ],
+                        "narrative": "Keep left to take US-101 N toward Los Angeles/Civic Center.",
+                        "turnType": 7,
+                        "startPoint": {
+                            "lng": -118.205727,
+                            "lat": 34.025482
+                        },
+                        "index": 3,
+                        "formattedTime": "00:03:55",
+                        "directionName": "North",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "101",
+                                "type": 2,
+                                "url": "http://icons.mqcdn.com/icons/rs2.png?n=101&d=NORTH",
+                                "direction": 1
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=34.025482177734375,-118.20572662353516|marker-4||34.056236267089844,-118.24110412597656|marker-5||&center=34.04085922241211,-118.22341537475586&defaultMarker=none&zoom=8&rand=-1602992899&session=6266d977-0358-6750-02b4-359b-0a8582d8a371",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 235,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_slight_left_sm.gif",
+                        "direction": 1
+                    },
+                    {
+                        "distance": 0.123,
+                        "streets": [],
+                        "narrative": "Take the Spring St exit, EXIT 2C.",
+                        "turnType": 14,
+                        "startPoint": {
+                            "lng": -118.241104,
+                            "lat": 34.056236
+                        },
+                        "index": 4,
+                        "formattedTime": "00:00:11",
+                        "directionName": "Northeast",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "2C",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=2C&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=34.056236267089844,-118.24110412597656|marker-5||34.05715560913086,-118.24053955078125|marker-6||&center=34.05669593811035,-118.2408218383789&defaultMarker=none&zoom=14&rand=-1602992899&session=6266d977-0358-6750-02b4-359b-0a8582d8a371",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 11,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_gr_exitright_sm.gif",
+                        "direction": 3
+                    },
+                    {
+                        "distance": 0.367,
+                        "streets": [
+                            "N Spring St"
+                        ],
+                        "narrative": "Turn right onto N Spring St.",
+                        "turnType": 2,
+                        "startPoint": {
+                            "lng": -118.24054,
+                            "lat": 34.057156
+                        },
+                        "index": 5,
+                        "formattedTime": "00:01:00",
+                        "directionName": "Southwest",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=34.05715560913086,-118.24053955078125|marker-6||34.05296325683594,-118.24446868896484|marker-7||&center=34.0550594329834,-118.24250411987305&defaultMarker=none&zoom=11&rand=-1602992899&session=6266d977-0358-6750-02b4-359b-0a8582d8a371",
+                        "transportMode": "AUTO",
+                        "attributes": 1024,
+                        "time": 60,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+                        "direction": 6
+                    },
+                    {
+                        "distance": 0.082,
+                        "streets": [
+                            "W 1st St"
+                        ],
+                        "narrative": "Turn left onto W 1st St.",
+                        "turnType": 6,
+                        "startPoint": {
+                            "lng": -118.244469,
+                            "lat": 34.052963
+                        },
+                        "index": 6,
+                        "formattedTime": "00:00:12",
+                        "directionName": "Southeast",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=34.05296325683594,-118.24446868896484|marker-7||34.052223205566406,-118.24335479736328|marker-8||&center=34.05259323120117,-118.24391174316406&defaultMarker=none&zoom=14&rand=-1602992899&session=6266d977-0358-6750-02b4-359b-0a8582d8a371",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 12,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+                        "direction": 5
+                    },
+                    {
+                        "distance": 0,
+                        "streets": [],
+                        "narrative": "Welcome to LOS ANGELES, CA.",
+                        "turnType": -1,
+                        "startPoint": {
+                            "lng": -118.243355,
+                            "lat": 34.052223
+                        },
+                        "index": 7,
+                        "formattedTime": "00:00:00",
+                        "directionName": "",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 0,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-end_sm.gif",
+                        "direction": 0
+                    }
+                ],
+                "hasFerry": false
+            }
+        ],
+        "options": {
+            "arteryWeights": [],
+            "cyclingRoadFactor": 1,
+            "timeType": 0,
+            "useTraffic": false,
+            "returnLinkDirections": false,
+            "countryBoundaryDisplay": true,
+            "enhancedNarrative": false,
+            "locale": "en_US",
+            "tryAvoidLinkIds": [],
+            "drivingStyle": 2,
+            "doReverseGeocode": true,
+            "generalize": -1,
+            "mustAvoidLinkIds": [],
+            "sideOfStreetDisplay": true,
+            "routeType": "FASTEST",
+            "avoidTimedConditions": false,
+            "routeNumber": 0,
+            "shapeFormat": "raw",
+            "maxWalkingDistance": -1,
+            "destinationManeuverDisplay": true,
+            "transferPenalty": -1,
+            "narrativeType": "text",
+            "walkingSpeed": -1,
+            "urbanAvoidFactor": -1,
+            "stateBoundaryDisplay": true,
+            "unit": "M",
+            "highwayEfficiency": 22,
+            "maxLinkId": 0,
+            "maneuverPenalty": -1,
+            "avoidTripIds": [],
+            "filterZoneFactor": -1,
+            "manmaps": "true"
+        },
+        "locations": [
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -117.163818,
+                    "lat": 32.715759
+                },
+                "adminArea4": "San Diego County",
+                "adminArea5": "San Diego",
+                "postalCode": "",
+                "adminArea1": "US",
+                "adminArea3": "CA",
+                "type": "s",
+                "sideOfStreet": "N",
+                "geocodeQualityCode": "A5XAX",
+                "adminArea4Type": "County",
+                "linkId": 7980912,
+                "street": "",
+                "adminArea5Type": "City",
+                "geocodeQuality": "CITY",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -117.163817,
+                    "lat": 32.71576
+                }
+            },
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -118.243347,
+                    "lat": 34.052238
+                },
+                "adminArea4": "Los Angeles County",
+                "adminArea5": "Los Angeles",
+                "postalCode": "",
+                "adminArea1": "US",
+                "adminArea3": "CA",
+                "type": "s",
+                "sideOfStreet": "N",
+                "geocodeQualityCode": "A5XAX",
+                "adminArea4Type": "County",
+                "linkId": 42663330,
+                "street": "",
+                "adminArea5Type": "City",
+                "geocodeQuality": "CITY",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -118.243344,
+                    "lat": 34.052238
+                }
+            }
+        ],
+        "time": 7264,
+        "hasUnpaved": false,
+        "locationSequence": [
+            0,
+            1
+        ],
+        "hasFerry": false
+    },
+    "info": {
+        "statuscode": 0,
+        "copyright": {
+            "imageAltText": "© 2022 MapQuest, Inc.",
+            "imageUrl": "http://api.mqcdn.com/res/mqlogo.gif",
+            "text": "© 2022 MapQuest, Inc."
+        },
+        "messages": []
+    }
+}
