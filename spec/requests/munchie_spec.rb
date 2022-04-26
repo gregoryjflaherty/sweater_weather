@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Search Munchie Route' do
   scenario 'detailed route with restaurant', :vcr do
-    get "http://localhost:3000/api/v1/munchies?start=San Diego&destination=Los Angeles&food=chinese"
+    get "http://localhost:3000/api/v1/munchies?start=SanDiego&destination=LosAngeles&food=chinese"
     expected = JSON.parse(response.body, symbolize_names: true)
 
     expect(response).to be_successful
