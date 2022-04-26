@@ -1,0 +1,17 @@
+{
+    "data": {
+        "id": "null",
+        "type": "image",
+        "attributes": {
+            "image": {
+                "location": "San Diego",
+                "image_url": "https://www.pexels.com/photo/marina-during-golden-hour-2157685/"
+            },
+            "credit": {
+                "source": "pexels.com",
+                "author": "Lucas Fonseca",
+                "logo": "https://images.pexels.com/lib/api/pexels-white.png"
+            }
+        }
+    }
+}
