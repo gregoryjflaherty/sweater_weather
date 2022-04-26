@@ -19,13 +19,15 @@ RSpec.describe 'Search Munchie Route' do
     expect(expected[:data][:attributes][:forecast].keys).to include(:temperature)
   end
 
-  scenario 'catches bad request error if parameters are incorrect', :vcr do
-    get "http://localhost:3000/api/v1/munchies?start=105251&destination=87878&food=chinese"
-    expected = JSON.parse(response.body, symbolize_names: true)
+  context 'Sad Path' do
+    scenario 'catches bad request error if parameters are incorrect', :vcr do
+      get "http://localhost:3000/api/v1/munchies?start=105251&destination=87878&food=chinese"
+      expected = JSON.parse(response.body, symbolize_names: true)
 
-    expect(response.status).to eq(400)
-    expect(expected[:data]).to be(nil)
+      expect(response.status).to eq(400)
+      expect(expected[:data]).to be(nil)
 
-    expect(expected[:message]).to eq("Request Invalid: Please check paramters and try again")
+      expect(expected[:message]).to eq("Request Invalid: Please check paramters and try again")
+    end
   end
 end
