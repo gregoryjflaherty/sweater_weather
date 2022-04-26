@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Search Image' do
-  scenario 'retrieves image for city that is searched' do
+  scenario 'retrieves image for city that is searched', :vcr do
     VCR.use_cassette('san_diego_image') do
       params = {location: 'San Diego'}
       get api_v1_backgrounds_path, params: params
