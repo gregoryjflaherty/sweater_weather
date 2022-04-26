@@ -1,4 +1,6 @@
 class Api::V1::UsersController < ApplicationController
+  before_action :check_body, only: [:create]
+
   def create
     user = create_user
     if user.save
@@ -9,6 +11,12 @@ class Api::V1::UsersController < ApplicationController
   end
 
   private
+
+  def check_body
+    if params[:user].nil?
+      render json: {message: "Request must be sent in body"}, status: 400
+    end
+  end
 
   def create_user
     User.create(

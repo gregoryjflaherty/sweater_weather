@@ -1,18 +1,21 @@
 require 'rails_helper'
-RSpec.describe 'Create New User' do
-  scenario 'creates new user and returns correct format', :vcr do
+RSpec.describe 'Log In User' do
+  before(:each) do
+    User.create!(email: 'fake@user.com', password: 'test', password_confirmation: 'test')
+  end
+
+  scenario 'creates new session and returns user info', :vcr do
     @request_body = {
                      "email": 'fake@user.com',
                      "password": 'test',
-                     "password_confirmation": 'test'
                      }
 
-    post '/api/v1/users', :params => @request_body, as: :json
+    post '/api/v1/sessions', :params => @request_body, as: :json
 
     expected = JSON.parse(response.body, symbolize_names: true)
 
     expect(response).to be_successful
-    expect(response.status).to eq(201)
+    expect(response.status).to eq(200)
     expect(expected.keys.length).to eq(1)
     expect(expected.keys[0]).to eq(:data)
 
@@ -31,43 +34,56 @@ RSpec.describe 'Create New User' do
 
 
   context 'Sad Path' do
-    scenario 'returns error if password confirmation is wrong', :vcr do
-      @request_body = {
-                       "email": 'fake@user.com',
-                       "password": 'test',
-                       "password_confirmation": 'test2'
-                       }
-      post '/api/v1/users', :params => @request_body, as: :json
+    scenario 'returns error if passed in via params', :vcr do
+
+      post '/api/v1/users?email=fake@user.com&password=test'
       expected = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to_not be_successful
-      expect(response.status).to eq(422)
+      expect(response.status).to eq(400)
       expect(expected.keys.length).to eq(1)
       expect(expected.keys[0]).to eq(:message)
-      expect(expected.keys[0]).to_not eq(:data)
+      expect(expected.keys).to_not include(:data)
 
-      expect(expected[:message][0]).to eq("Password confirmation doesn't match Password")
+      expect(expected[:message]).to eq("Request must be sent in body")
     end
 
-    scenario 'returns error if email is already taken', :vcr do
-
-      User.create!(email: 'og@user.com', password: 'real_one', password_confirmation: 'real_one')
-
+    scenario 'returns error if email is incorrect', :vcr do
       @request_body = {
-                       "email": 'og@user.com',
+                       "email": 'fake1@user.com',
                        "password": 'test',
-                       "password_confirmation": 'test'
                        }
-      post '/api/v1/users', :params => @request_body, as: :json
+
+      post '/api/v1/sessions', :params => @request_body, as: :json
+
       expected = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to_not be_successful
       expect(response.status).to eq(422)
       expect(expected.keys.length).to eq(1)
       expect(expected.keys[0]).to eq(:message)
-      expect(expected.keys[0]).to_not eq(:data)
+      expect(expected.keys).to_not include(:data)
 
-      expect(expected[:message][0]).to eq("Email has already been taken")
+      expect(expected[:message]).to eq("Password/Email combination does not match")
+    end
+
+    scenario 'returns error if password is incorrect', :vcr do
+      @request_body = {
+                       "email": 'fake@user.com',
+                       "password": 'test1',
+                       }
+
+      post '/api/v1/sessions', :params => @request_body, as: :json
+
+      expected = JSON.parse(response.body, symbolize_names: true)
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(422)
+      expect(expected.keys.length).to eq(1)
+      expect(expected.keys[0]).to eq(:message)
+      expect(expected.keys).to_not include(:data)
+
+      expect(expected[:message]).to eq("Password/Email combination does not match")
     end
   end
 end
