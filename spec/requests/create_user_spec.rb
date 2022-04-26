@@ -7,7 +7,7 @@ RSpec.describe 'Create New User' do
                      "password_confirmation": 'test'
                      }
 
-    post '/api/v1/users', :params => @request_body
+    post '/api/v1/users', :params => @request_body, as: :json
 
     expected = JSON.parse(response.body, symbolize_names: true)
 
@@ -37,7 +37,7 @@ RSpec.describe 'Create New User' do
                        "password": 'test',
                        "password_confirmation": 'test2'
                        }
-      post '/api/v1/users', :params => @request_body
+      post '/api/v1/users', :params => @request_body, as: :json
       expected = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to_not be_successful
@@ -58,7 +58,7 @@ RSpec.describe 'Create New User' do
                        "password": 'test',
                        "password_confirmation": 'test'
                        }
-      post '/api/v1/users', :params => @request_body
+      post '/api/v1/users', :params => @request_body, as: :json
       expected = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to_not be_successful
