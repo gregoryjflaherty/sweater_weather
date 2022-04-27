@@ -15,6 +15,7 @@ class Current
     @sunset = Time.at(data[:sunset])
     @temp = data[:temp]
     @feels_like = data[:feels_like]
+    @uvi = data[:uvi]
     @humidity = data[:humidity]
     @visibility = data[:visibility]
     @conditions = data[:weather][0][:description]

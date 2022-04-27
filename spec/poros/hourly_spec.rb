@@ -26,7 +26,6 @@ RSpec.describe Hourly do
     expect(@hourly).to be_an_instance_of(Hourly)
     expect(@hourly.conditions).to eq("overcast clouds")
     expect(@hourly.icon).to eq("04n")
-    expect(@hourly.min_temp).to eq(58.15)
     expect(@hourly.temperature).to eq(58.15)
     expect(@hourly.time).to eq("07:00:00")
   end
