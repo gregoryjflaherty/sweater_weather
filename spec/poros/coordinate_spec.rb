@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Coordinate do
   it 'creates a coordinate object' do
-    response = File.read('spec/fixtures/coordinate_call.json')
+    response = File.read('spec/fixtures/vcr_cassettes/coordinate_call.json')
     data = JSON.parse(response, symbolize_names: true)
     object = Coordinate.new(data)
 

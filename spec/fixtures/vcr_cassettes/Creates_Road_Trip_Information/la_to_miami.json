@@ -1,0 +1,1039 @@
+{
+    "route": {
+        "hasTollRoad": true,
+        "hasBridge": true,
+        "boundingBox": {
+            "lr": {
+                "lng": -80.173203,
+                "lat": 25.775084
+            },
+            "ul": {
+                "lng": -118.243355,
+                "lat": 34.054859
+            }
+        },
+        "distance": 2733.7769,
+        "hasTimedRestriction": false,
+        "hasTunnel": true,
+        "hasHighway": true,
+        "computedWaypoints": [],
+        "routeError": {
+            "errorCode": -400,
+            "message": ""
+        },
+        "formattedTime": "38:58:34",
+        "sessionId": "62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+        "hasAccessRestriction": false,
+        "realTime": 10000000,
+        "hasSeasonalClosure": false,
+        "hasCountryCross": false,
+        "fuelUsed": 139.19,
+        "legs": [
+            {
+                "hasTollRoad": true,
+                "hasBridge": true,
+                "destNarrative": "Proceed to MIAMI, FL.",
+                "distance": 2733.7769,
+                "hasTimedRestriction": false,
+                "hasTunnel": true,
+                "hasHighway": true,
+                "index": 0,
+                "formattedTime": "38:58:34",
+                "origIndex": 2,
+                "hasAccessRestriction": false,
+                "hasSeasonalClosure": false,
+                "hasCountryCross": false,
+                "roadGradeStrategy": [
+                    []
+                ],
+                "destIndex": 23,
+                "time": 140314,
+                "hasUnpaved": false,
+                "origNarrative": "Go south on US-101 S.",
+                "maneuvers": [
+                    {
+                        "distance": 0.074,
+                        "streets": [
+                            "E 1st St"
+                        ],
+                        "narrative": "Start out going southeast on E 1st St toward S Los Angeles St.",
+                        "turnType": 0,
+                        "startPoint": {
+                            "lng": -118.243355,
+                            "lat": 34.052223
+                        },
+                        "index": 0,
+                        "formattedTime": "00:00:14",
+                        "directionName": "Southeast",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=34.052223205566406,-118.24335479736328|marker-1||34.051513671875,-118.24237823486328|marker-2||&center=34.0518684387207,-118.24286651611328&defaultMarker=none&zoom=14&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 14,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif",
+                        "direction": 5
+                    },
+                    {
+                        "distance": 0.287,
+                        "streets": [
+                            "N Los Angeles St"
+                        ],
+                        "narrative": "Turn left onto N Los Angeles St.",
+                        "turnType": 6,
+                        "startPoint": {
+                            "lng": -118.242378,
+                            "lat": 34.051514
+                        },
+                        "index": 1,
+                        "formattedTime": "00:00:55",
+                        "directionName": "Northeast",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=34.051513671875,-118.24237823486328|marker-2||34.05485916137695,-118.239501953125|marker-3||&center=34.05318641662598,-118.24094009399414&defaultMarker=none&zoom=11&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 55,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+                        "direction": 3
+                    },
+                    {
+                        "distance": 0.804,
+                        "streets": [
+                            "US-101 S"
+                        ],
+                        "narrative": "Merge onto US-101 S.",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -118.239502,
+                            "lat": 34.054859
+                        },
+                        "index": 2,
+                        "formattedTime": "00:01:03",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "101",
+                                "type": 2,
+                                "url": "http://icons.mqcdn.com/icons/rs2.png?n=101&d=SOUTH",
+                                "direction": 4
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=34.05485916137695,-118.239501953125|marker-3||34.05253601074219,-118.2259750366211|marker-4||&center=34.05369758605957,-118.23273849487305&defaultMarker=none&zoom=11&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 63,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 363.502,
+                        "streets": [
+                            "I-10 E"
+                        ],
+                        "narrative": "Merge onto I-10 E via EXIT 1D on the left toward San Bernardino/I-10 E (Crossing into Arizona).",
+                        "turnType": 11,
+                        "startPoint": {
+                            "lng": -118.225975,
+                            "lat": 34.052536
+                        },
+                        "index": 3,
+                        "formattedTime": "05:17:34",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "10",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=10&d=EAST",
+                                "direction": 8
+                            },
+                            {
+                                "extraText": "",
+                                "text": "1D",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=1D&d=LEFT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=34.05253601074219,-118.2259750366211|marker-4||33.46266174316406,-112.19613647460938|marker-5||&center=33.757598876953125,-115.21105575561523&defaultMarker=none&zoom=2&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 19054,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_left_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 21.845,
+                        "streets": [
+                            "South Mountain Fwy",
+                            "AZ-202 Loop N"
+                        ],
+                        "narrative": "Merge onto South Mountain Fwy/AZ-202 Loop N via EXIT 138 toward AZ-202 Loop S.",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -112.196136,
+                            "lat": 33.462662
+                        },
+                        "index": 4,
+                        "formattedTime": "00:21:52",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "202",
+                                "type": 3,
+                                "url": "http://icons.mqcdn.com/icons/rs3.png?n=202&d=NORTH",
+                                "direction": 1
+                            },
+                            {
+                                "extraText": "",
+                                "text": "138",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=138&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=33.46266174316406,-112.19613647460938|marker-5||33.29144287109375,-111.99105834960938|marker-6||&center=33.377052307128906,-112.09359741210938&defaultMarker=none&zoom=6&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 1312,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 0.525,
+                        "streets": [
+                            "E Pecos Rd"
+                        ],
+                        "narrative": "South Mountain Fwy/AZ-202 Loop N becomes E Pecos Rd.",
+                        "turnType": 0,
+                        "startPoint": {
+                            "lng": -111.991058,
+                            "lat": 33.291443
+                        },
+                        "index": 5,
+                        "formattedTime": "00:00:31",
+                        "directionName": "Northeast",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=33.29144287109375,-111.99105834960938|marker-6||33.293643951416016,-111.98248291015625|marker-7||&center=33.29254341125488,-111.98677062988281&defaultMarker=none&zoom=11&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 128,
+                        "time": 31,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+                        "direction": 3
+                    },
+                    {
+                        "distance": 965.0571,
+                        "streets": [
+                            "I-10 E",
+                            "US-87 S"
+                        ],
+                        "narrative": "Merge onto I-10 E/US-87 S via EXIT 53 toward Tucson (Passing through New Mexico, then crossing into Texas).",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -111.982483,
+                            "lat": 33.293644
+                        },
+                        "index": 6,
+                        "formattedTime": "12:53:41",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "10",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=10&d=EAST",
+                                "direction": 8
+                            },
+                            {
+                                "extraText": "",
+                                "text": "87",
+                                "type": 2,
+                                "url": "http://icons.mqcdn.com/icons/rs2.png?n=87&d=SOUTH",
+                                "direction": 4
+                            },
+                            {
+                                "extraText": "",
+                                "text": "53",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=53&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=33.293643951416016,-111.98248291015625|marker-7||29.433385848999023,-98.50221252441406|marker-8||&center=31.36351490020752,-105.24234771728516&defaultMarker=none&zoom=2&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 46421,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 0.715,
+                        "streets": [],
+                        "narrative": "Take the I-35 N exit, EXIT 570, on the left toward Austin.",
+                        "turnType": 15,
+                        "startPoint": {
+                            "lng": -98.502213,
+                            "lat": 29.433386
+                        },
+                        "index": 7,
+                        "formattedTime": "00:00:56",
+                        "directionName": "Northeast",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "570",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=570&d=LEFT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=29.433385848999023,-98.50221252441406|marker-8||29.43631935119629,-98.49272918701172|marker-9||&center=29.434852600097656,-98.49747085571289&defaultMarker=none&zoom=11&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 1024,
+                        "time": 56,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_gr_exitleft_sm.gif",
+                        "direction": 3
+                    },
+                    {
+                        "distance": 4.976,
+                        "streets": [
+                            "I-35 N"
+                        ],
+                        "narrative": "Merge onto I-35 N via the ramp on the left toward US-281 N/Johnson City/Corpus Christi/I-37 S/US-281 S.",
+                        "turnType": 11,
+                        "startPoint": {
+                            "lng": -98.492729,
+                            "lat": 29.436319
+                        },
+                        "index": 8,
+                        "formattedTime": "00:05:16",
+                        "directionName": "North",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "35",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=35&d=NORTH",
+                                "direction": 1
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=29.43631935119629,-98.49272918701172|marker-9||29.453256607055664,-98.4161148071289|marker-10||&center=29.444787979125977,-98.45442199707031&defaultMarker=none&zoom=8&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 316,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_left_sm.gif",
+                        "direction": 1
+                    },
+                    {
+                        "distance": 0.409,
+                        "streets": [],
+                        "narrative": "Take the I-410 S exit, EXIT 162.",
+                        "turnType": 14,
+                        "startPoint": {
+                            "lng": -98.416115,
+                            "lat": 29.453257
+                        },
+                        "index": 9,
+                        "formattedTime": "00:00:32",
+                        "directionName": "Northeast",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "162",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=162&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=29.453256607055664,-98.4161148071289|marker-10||29.453596115112305,-98.41032409667969|marker-11||&center=29.453426361083984,-98.4132194519043&defaultMarker=none&zoom=12&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 1024,
+                        "time": 32,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_gr_exitright_sm.gif",
+                        "direction": 3
+                    },
+                    {
+                        "distance": 1.433,
+                        "streets": [
+                            "I-410 S"
+                        ],
+                        "narrative": "Merge onto I-410 S via the ramp on the left.",
+                        "turnType": 11,
+                        "startPoint": {
+                            "lng": -98.410324,
+                            "lat": 29.453596
+                        },
+                        "index": 10,
+                        "formattedTime": "00:01:41",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "410",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=410&d=SOUTH",
+                                "direction": 4
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=29.453596115112305,-98.41032409667969|marker-11||29.44032096862793,-98.3927001953125|marker-12||&center=29.446958541870117,-98.4015121459961&defaultMarker=none&zoom=9&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 128,
+                        "time": 101,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_left_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 0.133,
+                        "streets": [],
+                        "narrative": "Take EXIT 33 toward I-10/Houston/US-90/TX-130/San Antonio.",
+                        "turnType": 14,
+                        "startPoint": {
+                            "lng": -98.3927,
+                            "lat": 29.440321
+                        },
+                        "index": 11,
+                        "formattedTime": "00:00:11",
+                        "directionName": "Southeast",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "33",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=33&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=29.44032096862793,-98.3927001953125|marker-12||29.43861961364746,-98.39166259765625|marker-13||&center=29.439470291137695,-98.39218139648438&defaultMarker=none&zoom=12&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 11,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_gr_exitright_sm.gif",
+                        "direction": 5
+                    },
+                    {
+                        "distance": 0.47,
+                        "streets": [],
+                        "narrative": "Keep left to take the I-10 E/TX-130 N/US-90 E ramp toward Houston/Seguin.",
+                        "turnType": 13,
+                        "startPoint": {
+                            "lng": -98.391663,
+                            "lat": 29.43862
+                        },
+                        "index": 12,
+                        "formattedTime": "00:00:38",
+                        "directionName": "Southeast",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=29.43861961364746,-98.39166259765625|marker-13||29.435407638549805,-98.39049530029297|marker-14||&center=29.437013626098633,-98.39107894897461&defaultMarker=none&zoom=11&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 1024,
+                        "time": 38,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_ramp_sm.gif",
+                        "direction": 5
+                    },
+                    {
+                        "distance": 271.464,
+                        "streets": [
+                            "I-10 E"
+                        ],
+                        "narrative": "Merge onto I-10 E via the ramp on the left.",
+                        "turnType": 11,
+                        "startPoint": {
+                            "lng": -98.390495,
+                            "lat": 29.435408
+                        },
+                        "index": 13,
+                        "formattedTime": "03:57:46",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "10",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=10&d=EAST",
+                                "direction": 8
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=29.435407638549805,-98.39049530029297|marker-14||30.08721351623535,-94.13591003417969|marker-15||&center=29.761310577392578,-96.26320266723633&defaultMarker=none&zoom=3&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 14266,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_left_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 187.489,
+                        "streets": [
+                            "I-10 E"
+                        ],
+                        "narrative": "Keep left to take I-10 E toward Lake Charles (Crossing into Louisiana).",
+                        "turnType": 7,
+                        "startPoint": {
+                            "lng": -94.13591,
+                            "lat": 30.087214
+                        },
+                        "index": 14,
+                        "formattedTime": "02:49:24",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "10",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=10&d=EAST",
+                                "direction": 8
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=30.08721351623535,-94.13591003417969|marker-15||30.41935157775879,-91.12088012695312|marker-16||&center=30.25328254699707,-92.6283950805664&defaultMarker=none&zoom=3&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 10164,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_slight_left_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 86.412,
+                        "streets": [
+                            "I-12 E"
+                        ],
+                        "narrative": "Merge onto I-12 E via EXIT 159 on the left toward Hammond.",
+                        "turnType": 11,
+                        "startPoint": {
+                            "lng": -91.12088,
+                            "lat": 30.419352
+                        },
+                        "index": 15,
+                        "formattedTime": "01:16:22",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "12",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=12&d=EAST",
+                                "direction": 8
+                            },
+                            {
+                                "extraText": "",
+                                "text": "159",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=159&d=LEFT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=30.41935157775879,-91.12088012695312|marker-16||30.302980422973633,-89.7302017211914|marker-17||&center=30.36116600036621,-90.42554092407227&defaultMarker=none&zoom=4&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 4582,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_left_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 444.774,
+                        "streets": [
+                            "I-10 E"
+                        ],
+                        "narrative": "I-12 E becomes I-10 E (Passing through Mississippi and Alabama, then crossing into Florida).",
+                        "turnType": 0,
+                        "startPoint": {
+                            "lng": -89.730202,
+                            "lat": 30.30298
+                        },
+                        "index": 16,
+                        "formattedTime": "06:28:03",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "10",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=10&d=EAST",
+                                "direction": 8
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=30.302980422973633,-89.7302017211914|marker-17||30.26725196838379,-82.75731658935547|marker-18||&center=30.28511619567871,-86.24375915527344&defaultMarker=none&zoom=2&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 3200,
+                        "time": 23283,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 107.557,
+                        "streets": [
+                            "I-75 S"
+                        ],
+                        "narrative": "Merge onto I-75 S via EXIT 296A toward Tampa.",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -82.757317,
+                            "lat": 30.267252
+                        },
+                        "index": 17,
+                        "formattedTime": "01:34:38",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "75",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=75&d=SOUTH",
+                                "direction": 4
+                            },
+                            {
+                                "extraText": "",
+                                "text": "296A",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=296A&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=30.26725196838379,-82.75731658935547|marker-18||28.86148452758789,-82.091796875|marker-19||&center=29.56436824798584,-82.42455673217773&defaultMarker=none&zoom=3&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 5678,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 218.753,
+                        "streets": [
+                            "FL-91 S"
+                        ],
+                        "narrative": "Keep left to take FL-91 S via EXIT 328 toward Orlando (Portions toll).",
+                        "turnType": 7,
+                        "startPoint": {
+                            "lng": -82.091797,
+                            "lat": 28.861485
+                        },
+                        "index": 18,
+                        "formattedTime": "03:09:45",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "91",
+                                "type": 508,
+                                "url": "http://icons.mqcdn.com/icons/rs508.png?n=91&d=SOUTH",
+                                "direction": 4
+                            },
+                            {
+                                "extraText": "",
+                                "text": "328",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=328&d=LEFT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=28.86148452758789,-82.091796875|marker-19||26.569616317749023,-80.17320251464844|marker-20||&center=27.715550422668457,-81.13249969482422&defaultMarker=none&zoom=2&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 1153,
+                        "time": 11385,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_slight_left_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 30.504,
+                        "streets": [
+                            "Florida's Turnpike"
+                        ],
+                        "narrative": "Take Florida's Turnpike (Portions toll) (Electronic toll collection only).",
+                        "turnType": 1,
+                        "startPoint": {
+                            "lng": -80.173203,
+                            "lat": 26.569616
+                        },
+                        "index": 19,
+                        "formattedTime": "00:29:00",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=26.569616317749023,-80.17320251464844|marker-20||26.14281463623047,-80.21941375732422|marker-21||&center=26.356215476989746,-80.19630813598633&defaultMarker=none&zoom=5&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 1665,
+                        "time": 1740,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_slight_right_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 14.92,
+                        "streets": [
+                            "FL-91 S"
+                        ],
+                        "narrative": "Stay straight to go onto Ronald Reagan Turnpike/FL-91 S. Continue to follow FL-91 S (Portions toll).",
+                        "turnType": 0,
+                        "startPoint": {
+                            "lng": -80.219414,
+                            "lat": 26.142815
+                        },
+                        "index": 20,
+                        "formattedTime": "00:14:01",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "91",
+                                "type": 508,
+                                "url": "http://icons.mqcdn.com/icons/rs508.png?n=91&d=SOUTH",
+                                "direction": 4
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=26.14281463623047,-80.21941375732422|marker-21||25.93505859375,-80.21601104736328|marker-22||&center=26.038936614990234,-80.21771240234375&defaultMarker=none&zoom=5&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 1153,
+                        "time": 841,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 0.282,
+                        "streets": [],
+                        "narrative": "Take the FL-826 W exit toward I-95/US-441.",
+                        "turnType": 14,
+                        "startPoint": {
+                            "lng": -80.216011,
+                            "lat": 25.935059
+                        },
+                        "index": 21,
+                        "formattedTime": "00:00:26",
+                        "directionName": "Southeast",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=25.93505859375,-80.21601104736328|marker-22||25.931941986083984,-80.21310424804688|marker-23||&center=25.933500289916992,-80.21455764770508&defaultMarker=none&zoom=11&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 26,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_gr_exitright_sm.gif",
+                        "direction": 5
+                    },
+                    {
+                        "distance": 9.994,
+                        "streets": [
+                            "I-95 S"
+                        ],
+                        "narrative": "Merge onto I-95 S via the ramp on the left.",
+                        "turnType": 11,
+                        "startPoint": {
+                            "lng": -80.213104,
+                            "lat": 25.931942
+                        },
+                        "index": 22,
+                        "formattedTime": "00:10:54",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "95",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=95&d=SOUTH",
+                                "direction": 4
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=25.931941986083984,-80.21310424804688|marker-23||25.787736892700195,-80.20365905761719|marker-24||&center=25.85983943939209,-80.20838165283203&defaultMarker=none&zoom=6&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 654,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_left_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 0.466,
+                        "streets": [],
+                        "narrative": "Take the NW 8th St exit, EXIT 3B, toward Port of Miami.",
+                        "turnType": 14,
+                        "startPoint": {
+                            "lng": -80.203659,
+                            "lat": 25.787737
+                        },
+                        "index": 23,
+                        "formattedTime": "00:00:47",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "3B",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=3B&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=25.787736892700195,-80.20365905761719|marker-24||25.781660079956055,-80.2006607055664|marker-25||&center=25.784698486328125,-80.2021598815918&defaultMarker=none&zoom=10&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 1024,
+                        "time": 47,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_gr_exitright_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 0.202,
+                        "streets": [
+                            "NW 3rd Ct"
+                        ],
+                        "narrative": "Stay straight to go onto NW 3rd Ct.",
+                        "turnType": 0,
+                        "startPoint": {
+                            "lng": -80.200661,
+                            "lat": 25.78166
+                        },
+                        "index": 24,
+                        "formattedTime": "00:00:31",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=25.781660079956055,-80.2006607055664|marker-25||25.778776168823242,-80.20015716552734|marker-26||&center=25.78021812438965,-80.20040893554688&defaultMarker=none&zoom=12&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 31,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 0.398,
+                        "streets": [
+                            "NW 5th St"
+                        ],
+                        "narrative": "Turn left onto NW 5th St.",
+                        "turnType": 6,
+                        "startPoint": {
+                            "lng": -80.200157,
+                            "lat": 25.778776
+                        },
+                        "index": 25,
+                        "formattedTime": "00:01:01",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=25.778776168823242,-80.20015716552734|marker-26||25.77899169921875,-80.19377899169922|marker-27||&center=25.778883934020996,-80.19696807861328&defaultMarker=none&zoom=12&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 61,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 0.266,
+                        "streets": [
+                            "N Miami Ave"
+                        ],
+                        "narrative": "Turn right onto N Miami Ave.",
+                        "turnType": 2,
+                        "startPoint": {
+                            "lng": -80.193779,
+                            "lat": 25.778992
+                        },
+                        "index": 26,
+                        "formattedTime": "00:00:35",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=25.77899169921875,-80.19377899169922|marker-27||25.775127410888672,-80.19364166259766|marker-28||&center=25.77705955505371,-80.19371032714844&defaultMarker=none&zoom=11&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 35,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 0.066,
+                        "streets": [
+                            "NW 1St St"
+                        ],
+                        "narrative": "Turn right onto NW 1St St.",
+                        "turnType": 2,
+                        "startPoint": {
+                            "lng": -80.193642,
+                            "lat": 25.775127
+                        },
+                        "index": 27,
+                        "formattedTime": "00:00:17",
+                        "directionName": "West",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&size=225,160&locations=25.775127410888672,-80.19364166259766|marker-28||25.775083541870117,-80.1947021484375|marker-29||&center=25.775105476379395,-80.19417190551758&defaultMarker=none&zoom=15&rand=-263714320&session=62691860-00df-6750-02b4-34f0-0aa4a62e26e3",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 17,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+                        "direction": 7
+                    },
+                    {
+                        "distance": 0,
+                        "streets": [],
+                        "narrative": "Welcome to MIAMI, FL.",
+                        "turnType": -1,
+                        "startPoint": {
+                            "lng": -80.194702,
+                            "lat": 25.775084
+                        },
+                        "index": 28,
+                        "formattedTime": "00:00:00",
+                        "directionName": "",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 0,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-end_sm.gif",
+                        "direction": 0
+                    }
+                ],
+                "hasFerry": false
+            }
+        ],
+        "options": {
+            "arteryWeights": [],
+            "cyclingRoadFactor": 1,
+            "timeType": 0,
+            "useTraffic": false,
+            "returnLinkDirections": false,
+            "countryBoundaryDisplay": true,
+            "enhancedNarrative": false,
+            "locale": "en_US",
+            "tryAvoidLinkIds": [],
+            "drivingStyle": 2,
+            "doReverseGeocode": true,
+            "generalize": -1,
+            "mustAvoidLinkIds": [],
+            "sideOfStreetDisplay": true,
+            "routeType": "FASTEST",
+            "avoidTimedConditions": false,
+            "routeNumber": 0,
+            "shapeFormat": "raw",
+            "maxWalkingDistance": -1,
+            "destinationManeuverDisplay": true,
+            "transferPenalty": -1,
+            "narrativeType": "text",
+            "walkingSpeed": -1,
+            "urbanAvoidFactor": -1,
+            "stateBoundaryDisplay": true,
+            "unit": "M",
+            "highwayEfficiency": 22,
+            "maxLinkId": 0,
+            "maneuverPenalty": -1,
+            "avoidTripIds": [],
+            "filterZoneFactor": -1,
+            "manmaps": "true"
+        },
+        "locations": [
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -118.243347,
+                    "lat": 34.052238
+                },
+                "adminArea4": "Los Angeles County",
+                "adminArea5": "Los Angeles",
+                "postalCode": "",
+                "adminArea1": "US",
+                "adminArea3": "CA",
+                "type": "s",
+                "sideOfStreet": "N",
+                "geocodeQualityCode": "A5XAX",
+                "adminArea4Type": "County",
+                "linkId": 42663330,
+                "street": "",
+                "adminArea5Type": "City",
+                "geocodeQuality": "CITY",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -118.243344,
+                    "lat": 34.052238
+                }
+            },
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -80.194702,
+                    "lat": 25.775084
+                },
+                "adminArea4": "Miami-Dade",
+                "adminArea5": "Miami",
+                "postalCode": "",
+                "adminArea1": "US",
+                "adminArea3": "FL",
+                "type": "s",
+                "sideOfStreet": "N",
+                "geocodeQualityCode": "A5XAX",
+                "adminArea4Type": "County",
+                "linkId": 77663047,
+                "street": "",
+                "adminArea5Type": "City",
+                "geocodeQuality": "CITY",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -80.194702,
+                    "lat": 25.775084
+                }
+            }
+        ],
+        "time": 140314,
+        "hasUnpaved": false,
+        "locationSequence": [
+            0,
+            1
+        ],
+        "hasFerry": false
+    },
+    "info": {
+        "statuscode": 0,
+        "copyright": {
+            "imageAltText": "© 2022 MapQuest, Inc.",
+            "imageUrl": "http://api.mqcdn.com/res/mqlogo.gif",
+            "text": "© 2022 MapQuest, Inc."
+        },
+        "messages": []
+    }
+}

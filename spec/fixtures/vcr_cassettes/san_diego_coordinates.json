@@ -1,0 +1,55 @@
+{
+    "info": {
+        "statuscode": 0,
+        "copyright": {
+            "text": "© 2022 MapQuest, Inc.",
+            "imageUrl": "http://api.mqcdn.com/res/mqlogo.gif",
+            "imageAltText": "© 2022 MapQuest, Inc."
+        },
+        "messages": []
+    },
+    "options": {
+        "maxResults": -1,
+        "thumbMaps": true,
+        "ignoreLatLngInput": false
+    },
+    "results": [
+        {
+            "providedLocation": {
+                "location": "San Diego. CA"
+            },
+            "locations": [
+                {
+                    "street": "",
+                    "adminArea6": "",
+                    "adminArea6Type": "Neighborhood",
+                    "adminArea5": "San Diego",
+                    "adminArea5Type": "City",
+                    "adminArea4": "San Diego County",
+                    "adminArea4Type": "County",
+                    "adminArea3": "CA",
+                    "adminArea3Type": "State",
+                    "adminArea1": "US",
+                    "adminArea1Type": "Country",
+                    "postalCode": "",
+                    "geocodeQualityCode": "A5XAX",
+                    "geocodeQuality": "CITY",
+                    "dragPoint": false,
+                    "sideOfStreet": "N",
+                    "linkId": "282038949",
+                    "unknownInput": "",
+                    "type": "s",
+                    "latLng": {
+                        "lat": 32.71576,
+                        "lng": -117.163817
+                    },
+                    "displayLatLng": {
+                        "lat": 32.71576,
+                        "lng": -117.163817
+                    },
+                    "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&type=map&size=225,160&locations=32.71576,-117.163817|marker-sm-50318A-1&scalebar=true&zoom=12&rand=737658691"
+                }
+            ]
+        }
+    ]
+}
