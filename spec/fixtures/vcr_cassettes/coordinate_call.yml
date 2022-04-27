@@ -1,0 +1,119 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&location=Los%20Angeles
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Wed, 27 Apr 2022 12:55:01 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '6685'
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Geocodetransactioncount:
+      - '1'
+      Last-Modified:
+      - Wed, 27 Apr 2022 12:55:01 GMT
+      Pragma:
+      - no-cache
+      Reversegeocodetransactioncount:
+      - '0'
+      Set-Cookie:
+      - JSESSIONID=8E81BC0D8E16FC3BA663B1FB8A25304A; Path=/; HttpOnly
+      Status:
+      - success
+      Transactionweight:
+      - '1.0'
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2022 MapQuest,
+        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
+        2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Los
+        Angeles"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Los
+        Angeles","adminArea5Type":"City","adminArea4":"Los Angeles County","adminArea4Type":"County","adminArea3":"CA","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039899","unknownInput":"","type":"s","latLng":{"lat":34.052238,"lng":-118.243344},"displayLatLng":{"lat":34.052238,"lng":-118.243344},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&type=map&size=225,160&locations=34.052238,-118.243344|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-967412439"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Los
+        \u00C1ngeles","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"BIOB\u00CDO
+        REGION","adminArea3Type":"State","adminArea1":"CL","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282189910","unknownInput":"","type":"s","latLng":{"lat":-37.470495,"lng":-72.35168},"displayLatLng":{"lat":-37.470495,"lng":-72.35168},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&type=map&size=225,160&locations=-37.470495,-72.35168|marker-sm-50318A-2&scalebar=true&zoom=12&rand=-1767243297"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Los
+        Angeles","adminArea5Type":"City","adminArea4":"Castell\u00F3n Province","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"ES","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"283467369","unknownInput":"","type":"s","latLng":{"lat":39.892615,"lng":-0.516434},"displayLatLng":{"lat":39.892615,"lng":-0.516434},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&type=map&size=225,160&locations=39.892615,-0.516434|marker-sm-50318A-3&scalebar=true&zoom=12&rand=-1987056796"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Los
+        \u00C1ngeles","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"AR","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"283430108","unknownInput":"","type":"s","latLng":{"lat":-34.456009,"lng":-60.178099},"displayLatLng":{"lat":-34.456009,"lng":-60.178099},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&type=map&size=225,160&locations=-34.456009,-60.178099|marker-sm-50318A-4&scalebar=true&zoom=12&rand=-988492097"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Los
+        Angeles","adminArea5Type":"City","adminArea4":"Madrid","adminArea4Type":"County","adminArea3":"MADRID","adminArea3Type":"State","adminArea1":"ES","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"283414684","unknownInput":"","type":"s","latLng":{"lat":40.266208,"lng":-3.536175},"displayLatLng":{"lat":40.266208,"lng":-3.536175},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&type=map&size=225,160&locations=40.266208,-3.536175|marker-sm-50318A-5&scalebar=true&zoom=12&rand=744794753"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Los
+        Angeles County","adminArea4Type":"County","adminArea3":"CA","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282931754","unknownInput":"","type":"s","latLng":{"lat":34.052238,"lng":-118.243344},"displayLatLng":{"lat":34.052238,"lng":-118.243344},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&type=map&size=225,160&locations=34.052238,-118.243344|marker-sm-50318A-6&scalebar=true&zoom=9&rand=-642280246"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Los
+        Angeles","adminArea5Type":"City","adminArea4":"La Salle County","adminArea4Type":"County","adminArea3":"TX","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282922230","unknownInput":"","type":"s","latLng":{"lat":28.465599,"lng":-99.0},"displayLatLng":{"lat":28.465599,"lng":-99.0},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&type=map&size=225,160&locations=28.465599,-99.0|marker-sm-50318A-7&scalebar=true&zoom=12&rand=460674691"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Los
+        Angeles","adminArea5Type":"City","adminArea4":"Medell\u00EDn","adminArea4Type":"County","adminArea3":"ANTIOQUIA","adminArea3Type":"State","adminArea1":"CO","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"362377111","unknownInput":"","type":"s","latLng":{"lat":6.2666,"lng":-75.566597},"displayLatLng":{"lat":6.2666,"lng":-75.566597},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&type=map&size=225,160&locations=6.2666,-75.566597|marker-sm-50318A-8&scalebar=true&zoom=12&rand=554264950"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Los
+        Angeles","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"TX","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282095837","unknownInput":"","type":"s","latLng":{"lat":26.493273,"lng":-97.784112},"displayLatLng":{"lat":26.493273,"lng":-97.784112},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&type=map&size=225,160&locations=26.493273,-97.784112|marker-sm-50318A-9&scalebar=true&zoom=12&rand=1223206887"}]}]}'
+  recorded_at: Wed, 27 Apr 2022 12:55:01 GMT
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=ygy5lPJR4s2X7f3T3aSquY4nEPyqSkP4&location=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Wed, 27 Apr 2022 12:55:20 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '382'
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Geocodetransactioncount:
+      - '0'
+      Last-Modified:
+      - Wed, 27 Apr 2022 12:55:20 GMT
+      Pragma:
+      - no-cache
+      Reversegeocodetransactioncount:
+      - '0'
+      Set-Cookie:
+      - JSESSIONID=6D77186780D1F36074BAEBA176D97FA8; Path=/; HttpOnly
+      Status:
+      - success
+      Transactionweight:
+      - '0.0'
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":400,"copyright":{"text":"\u00A9 2022 MapQuest,
+        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
+        2022 MapQuest, Inc."},"messages":["Illegal argument from request: Insufficient
+        info for location"]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":""},"locations":[]}]}'
+  recorded_at: Wed, 27 Apr 2022 12:55:20 GMT
+recorded_with: VCR 6.1.0
