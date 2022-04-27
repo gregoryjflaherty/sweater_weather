@@ -27,6 +27,10 @@ RSpec.describe 'Create New User' do
 
     expect(expected[:data][:attributes][:email]).to be_a String
     expect(expected[:data][:attributes][:api_key]).to be_a String
+
+    expect(expected[:data].length).to eq(3)
+    expect(expected[:data][:attributes].length).to eq(2)
+    expect(expected[:data][:attributes].keys).to_not include(:password)
   end
 
 
@@ -68,6 +72,21 @@ RSpec.describe 'Create New User' do
       expect(expected.keys[0]).to_not eq(:data)
 
       expect(expected[:message][0]).to eq("Email has already been taken")
+    end
+
+    scenario 'returns error if request not sent in body', :vcr do
+
+      post "/api/v1/sessions?email=g@gmail.com&password=someword&password_confirmation=someword"
+
+      expected = JSON.parse(response.body, symbolize_names: true)
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(400)
+      expect(expected.keys.length).to eq(1)
+      expect(expected.keys[0]).to eq(:message)
+      expect(expected.keys[0]).to_not eq(:data)
+
+      expect(expected[:message]).to eq("Request must be sent in body")
     end
   end
 end
