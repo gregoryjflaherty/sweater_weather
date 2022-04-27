@@ -5,7 +5,7 @@ class Daily
               :max_temp,
               :min_temp,
               :conditions,
-              :icon_string
+              :icon
 
   def initialize(data)
     @date = Time.at(data[:dt]).strftime("%Y-%m-%d")

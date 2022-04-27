@@ -1,8 +1,9 @@
 class Hourly
   attr_reader :time,
               :temperature,
+              :min_temp,
               :conditions,
-              :icon_string
+              :icon
 
   def initialize(data)
     @time = Time.at(data[:dt]).strftime("%H:%M:%S")
