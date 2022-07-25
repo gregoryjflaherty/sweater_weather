@@ -4,5 +4,7 @@ RSpec.describe User, type: :model do
 
   describe 'relationships' do
     it { should validate_presence_of(:email)}
+    it { should have_many(:trip_users)}
+    it { should have_many(:trips).through(:trip_users)}
   end
 end
