@@ -16,14 +16,14 @@ ActiveRecord::Schema.define(version: 2022_07_24_152857) do
   enable_extension "plpgsql"
 
   create_table "trip_users", force: :cascade do |t|
-    t.bigint "users_id"
-    t.bigint "trips_id"
+    t.bigint "user_id"
+    t.bigint "trip_id"
     t.integer "permission"
     t.boolean "is_a_favorite"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["trips_id"], name: "index_trip_users_on_trips_id"
-    t.index ["users_id"], name: "index_trip_users_on_users_id"
+    t.index ["trip_id"], name: "index_trip_users_on_trip_id"
+    t.index ["user_id"], name: "index_trip_users_on_user_id"
   end
 
   create_table "trips", force: :cascade do |t|
@@ -42,6 +42,6 @@ ActiveRecord::Schema.define(version: 2022_07_24_152857) do
     t.string "api_key"
   end
 
-  add_foreign_key "trip_users", "trips", column: "trips_id"
-  add_foreign_key "trip_users", "users", column: "users_id"
+  add_foreign_key "trip_users", "trips"
+  add_foreign_key "trip_users", "users"
 end
