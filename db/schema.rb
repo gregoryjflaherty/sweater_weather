@@ -10,10 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_26_141412) do
+ActiveRecord::Schema.define(version: 2022_07_24_152857) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "trip_users", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "trip_id"
+    t.integer "role"
+    t.boolean "is_a_favorite"
+    t.integer "invite_status", default: 0
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["trip_id"], name: "index_trip_users_on_trip_id"
+    t.index ["user_id"], name: "index_trip_users_on_user_id"
+  end
+
+  create_table "trips", force: :cascade do |t|
+    t.string "start_loc"
+    t.string "end_loc"
+    t.string "travel_time"
+    t.float "rating"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email"
@@ -23,4 +44,6 @@ ActiveRecord::Schema.define(version: 2022_04_26_141412) do
     t.string "api_key"
   end
 
+  add_foreign_key "trip_users", "trips"
+  add_foreign_key "trip_users", "users"
 end
