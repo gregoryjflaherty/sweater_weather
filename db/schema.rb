@@ -18,8 +18,9 @@ ActiveRecord::Schema.define(version: 2022_07_24_152857) do
   create_table "trip_users", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "trip_id"
-    t.integer "permission"
+    t.integer "role"
     t.boolean "is_a_favorite"
+    t.integer "invite_status", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["trip_id"], name: "index_trip_users_on_trip_id"
@@ -29,6 +30,7 @@ ActiveRecord::Schema.define(version: 2022_07_24_152857) do
   create_table "trips", force: :cascade do |t|
     t.string "start_loc"
     t.string "end_loc"
+    t.string "travel_time"
     t.float "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
