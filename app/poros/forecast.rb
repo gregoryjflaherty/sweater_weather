@@ -1,10 +1,7 @@
 class Forecast
-  attr_reader :street, :city, :country, :current_weather, :daily_weather, :hourly_weather
+  attr_reader :current_weather, :daily_weather, :hourly_weather
 
-  def initialize(data, coordinates)
-    @street = coordinates.street
-    @city = coordinates.city
-    @country = coordinates.country
+  def initialize(data)
     @current_weather = Current.new(data[:current])
     @daily_weather = get_daily(data[:daily])
     @hourly_weather = get_hourly(data[:hourly])
