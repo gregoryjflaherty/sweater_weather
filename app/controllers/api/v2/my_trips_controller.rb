@@ -1,28 +1,24 @@
-class Api::V2::FavoritesController < ApplicationController
+class Api::V2::MyTripsController < ApplicationController
     before_action :authenticate_user!
     
     def index
-        # require 'pry'; binding.pry
-        render json: {message: "Works"}
+        render json: current_user.trip_users, status: 200
     end
 
-    def show
-    end
 
     def create
-        @trip = Trip.create!(
+        trip = Trip.create!(
             start_loc: params[:data][:attributes][:start_city],
             end_loc: params[:data][:attributes][:end_city],
             travel_time: params[:data][:attributes][:travel_time])
         
-        @trip.trip_users.create!(
-            user_id: 1,
-            trip_id: @trip.id,
-            role: 0,
+        my_trip = trip.trip_users.create!(
+            user_id: current_user.id,
+            trip_id: trip.id,
+            role: 2,
             invite_status: nil
         )
-    end
 
-    def destory
+        render json: my_trip, status: 201
     end
 end
