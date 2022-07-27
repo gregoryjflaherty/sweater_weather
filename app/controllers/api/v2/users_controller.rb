@@ -1,4 +1,4 @@
-class Api::V1::UsersController < ApplicationController
+class Api::V2::UsersController < ApplicationController
   before_action :check_body, only: [:create]
 
   def create
@@ -12,13 +12,14 @@ class Api::V1::UsersController < ApplicationController
 
   private
 
-  def check_body
-    if params[:user].nil?
-      render json: {message: "Request must be sent in body"}, status: 400
-    end
-  end
+  # def check_body
+  #   if params[:user].nil?
+  #     render json: {message: "Request must be sent in body"}, status: 400
+  #   end
+  # end
 
   def create_user
+    require 'pry'; binding.pry
     User.create(
     email: params['email'],
     password: params['password'],
