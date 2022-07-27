@@ -1,10 +1,11 @@
 class Api::V2::RequestsController < ApplicationController
   before_action :authenticate_user!
+  before_action :find_trip_user, only: [:show, :update] 
 
   def index
-    if params[:sort] = 'incoming'
+    if params[:sort] == 'incoming'
       render json: current_user.incoming_requests, status: 200
-    elsif params[:sort] = 'outgoing'
+    elsif params[:sort] == 'outgoing'
       render json: current_user.sent_requests, status: 200
     else
       render json: {message: "Please sort by incoming or outgoing"}, status: 400
@@ -12,17 +13,20 @@ class Api::V2::RequestsController < ApplicationController
   end
 
   def show
-    request = TripUser.find_by(id: params[:id])
-    if request
-      request.update!(invite_status: 1)
-      render json: request, status: 200
-    else 
-      render json: {message: "Request ID not found"}, status: 404
-    end 
+    @request.update!(invite_status: 1)
+    render json: @request, status: 200
   end
-
+  
   def update
-    require 'pry'; binding.pry
+    if params[:accept].downcase == 'true'
+      @request.update!(invite_status: 2)
+      render json: @request, status: 200
+    elsif params[:accept].downcase == 'false'
+      @request.update!(invite_status: 3)
+      render json: @request, status: 200
+    else
+      render json: {message: "Please choose true or false"}, status: 400
+    end
   end
 
   def create
@@ -40,4 +44,11 @@ class Api::V2::RequestsController < ApplicationController
   def is_owner?
     render json: {message: "You must be an owner or manager to edit a trip"}, status: 401
   end
+
+  def find_trip_user
+    @request = TripUser.find_by(id: params[:id])
+    if !@request
+      render json: {message: "Request ID not found"}, status: 404
+    end
+  end 
 end
