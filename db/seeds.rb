@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-@user1 = User.create!(email: "fake@example.com", password_digest: 'something_here')
-@user2 = User.create!(email: "somebodyelse@example.com", password_digest: 'crazy_password')
+@user1 = User.create!(email: "fake@example.com", password: 'something_here', password_confirmation: 'something_here')
+@user2 = User.create!(email: "somebodyelse@example.com", password: 'crazy_password', password_confirmation: 'crazy_password')
 
 
 @sd_denver = Trip.create!(start_loc: "San Diego, CA", end_loc: "Denver, CO", 

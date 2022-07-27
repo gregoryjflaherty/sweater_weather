@@ -29,6 +29,8 @@ gem 'figaro'
 gem 'faraday'
 gem 'pexels'
 gem 'bcrypt'
+gem 'devise', '~> 4.8', '>= 4.8.1'
+gem 'simple_token_authentication', '~> 1.0'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
