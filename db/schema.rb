@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(version: 2022_07_27_154228) do
     t.bigint "user_id"
     t.bigint "trip_id"
     t.integer "role"
-    t.boolean "is_a_favorite"
     t.integer "invite_status", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -39,7 +38,6 @@ ActiveRecord::Schema.define(version: 2022_07_27_154228) do
   create_table "users", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "api_key"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
