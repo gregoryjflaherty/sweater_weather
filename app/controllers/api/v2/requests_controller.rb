@@ -30,6 +30,7 @@ class Api::V2::RequestsController < ApplicationController
   end
 
   def create
+    require 'pry'; binding.pry
     request = TripUser.create!(
       trip_id: Trip.find_by(params[:trip_id]).id,
       user_id: User.find_by(id: params[:recipient_id]).id,
