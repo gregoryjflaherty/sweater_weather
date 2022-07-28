@@ -33,7 +33,7 @@ RSpec.describe 'Search Image' do
 
   scenario 'returns error if numbers passed', :vcr do
 
-    params = {location: 456}
+    params = {location: 99999}
     get api_v1_backgrounds_path, params: params
 
     expected = JSON.parse(response.body, symbolize_names: true)
