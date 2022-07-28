@@ -1,5 +1,6 @@
 class Api::V2::InvitationsController < ApplicationController
   before_action :authenticate_user!
+  before_action :authorize
   before_action :find_trip_user, except: [:index] 
 
   def index
@@ -20,10 +21,10 @@ class Api::V2::InvitationsController < ApplicationController
   def update
     if params[:accept].downcase == 'true'
       @invitation.update!(invite_status: 2)
-      render json: @invitation, status: 204
+      render json: @invitation, status: 202
     elsif params[:accept].downcase == 'false'
       @invitation.update!(invite_status: 3)
-      render json: @invitation, status: 204
+      render json: @invitation, status: 202
     else
       render json: {message: "Please choose true or false"}, status: 400
     end

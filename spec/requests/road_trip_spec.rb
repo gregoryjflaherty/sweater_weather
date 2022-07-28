@@ -120,24 +120,6 @@ RSpec.describe 'Creates Road Trip Information' do
       expect(expected[:message]).to eq("Incomplete request body, include all requirements")
     end
 
-    scenario 'returns error if api_key is missing', :vcr do
-      @request_body = {
-                        "origin": "Los Angeles, CA",
-                        "destination": "Miami, FL"
-                      }
-
-      post '/api/v1/road_trip', :params => @request_body, as: :json
-      expected = JSON.parse(response.body, symbolize_names: true)
-
-      expect(response).to_not be_successful
-      expect(response.status).to eq(400)
-      expect(expected.keys.length).to eq(1)
-      expect(expected.keys[0]).to eq(:message)
-      expect(expected.keys[0]).to_not eq(:data)
-
-      expect(expected[:message]).to eq("Missing API Key")
-    end
-
     scenario 'returns error if request not sent in body', :vcr do
 
       post "/api/v1/road_trip?origin=San Diego&destination=Los Angeles&api_key=jgn983hy48thw9begh98h4539h4"

@@ -14,9 +14,9 @@ class Devise::SessionsController < ApplicationController
   end
   
   def destroy
-    if current_user
-      current_user.authentication_token = nil
-      render json: {message: "#{current_user.email} has been signed out"}, status: 200
+    current_user&.authentication_token = nil
+    if current_user.save
+      render json: {message: "Successful sign out"}, status: 200
     else
       head(:unauthorized)
     end 

@@ -13,8 +13,6 @@ class Api::V1::RoadTripController < ApplicationController
       render json: {message: "Request must be sent in body"}, status: 400
     elsif params[:origin].nil? || params[:destination].nil?
       render json: {message: "Incomplete request body, include all requirements"}, status: 400
-    elsif params[:api_key].nil?
-      render json: {message: "Missing API Key"}, status: 400
     end
   end
 end
