@@ -35,10 +35,10 @@
 
 
 
-
 TripUser.create!(user_id: @user1.id, trip_id: @sd_denver.id, role: 2, invite_status: nil)
 TripUser.create!(user_id: @user1.id, trip_id: @miami_dallas.id, role: 1, invite_status: 0)
 TripUser.create!(user_id: @user1.id, trip_id: @chi_ny.id, role: 0, invite_status: 0)
+
 
 TripUser.create!(user_id: @user2.id, trip_id: @miami_dallas.id, role: 2, invite_status: nil)
 TripUser.create!(user_id: @user2.id, trip_id: @chi_ny.id, role: 1, invite_status: 0)

@@ -7,14 +7,8 @@ class User < ApplicationRecord
   has_many :trip_users
   has_many :trips, through: :trip_users
 
-  def incoming_requests
+  def incoming_invites
     trip_users.where.not(role: 'owner')
-              .where.not(invite_status: ['accepted', 'rejected'])
-              .order(:invite_status)
-  end 
-
-  def outgoing_requests
-    trip_users.where(role: 'owner')
               .where.not(invite_status: ['accepted', 'rejected'])
               .order(:invite_status)
   end   

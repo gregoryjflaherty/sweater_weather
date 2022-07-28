@@ -3,8 +3,8 @@ RSpec.describe 'Create New User' do
   scenario 'creates new user and returns correct format', :vcr do
     @request_body = {
                      "email": 'fake@user.com',
-                     "password": 'test',
-                     "password_confirmation": 'test'
+                     "password": 'test12345678',
+                     "password_confirmation": 'test12345678'
                      }
 
     post '/api/v1/users', :params => @request_body, as: :json
@@ -38,7 +38,7 @@ RSpec.describe 'Create New User' do
     scenario 'returns error if password confirmation is wrong', :vcr do
       @request_body = {
                        "email": 'fake@user.com',
-                       "password": 'test',
+                       "password": 'test12345678',
                        "password_confirmation": 'test2'
                        }
       post '/api/v1/users', :params => @request_body, as: :json
@@ -59,8 +59,8 @@ RSpec.describe 'Create New User' do
 
       @request_body = {
                        "email": 'og@user.com',
-                       "password": 'test',
-                       "password_confirmation": 'test'
+                       "password": 'test12345678',
+                       "password_confirmation": 'test12345678'
                        }
       post '/api/v1/users', :params => @request_body, as: :json
       expected = JSON.parse(response.body, symbolize_names: true)

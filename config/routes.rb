@@ -10,11 +10,8 @@ Rails.application.routes.draw do
     end
     
     namespace :v2 do
-      # get :signup, to: "users#create"
-      # get :signin, to: "sessions#create"
-      # delete :signout, to: "sessions#destroy"
       resources :my_trips, only: [:index, :create]
-      resources :requests, except: [:destroy, :new]
+      resources :invitations, except: [:destroy, :new]
     end
   end
 end
