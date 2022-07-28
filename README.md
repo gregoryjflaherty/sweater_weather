@@ -17,6 +17,8 @@
   ### [Getting Started :runner:](#getting-started)
   ### [Important Information :warning:](#important-information)
   ### [Calling Endpoints :telephone_receiver:](#calling-endpoints)
+  #### [V1](#version-one)
+  #### [V2](#version-two)
   ### [Collaboration :handshake:](#collaboration)
   ### [Built With :hammer_and_wrench:](#built-with)
 
@@ -41,6 +43,7 @@
  ### Rails version 5.2.7
   In order to effectively call API endpoints, a few API keys will need to be obtained from third party APIs. Assuming 'bundle install' was ran as instructed in "Getting Started", the Figaro gem should be ready to go. Simply run 'bundle exec figaro install' from the CL to create an application yml file. This is where you will store the following keys from the following API's: 
 
+ 
 <div align="left">
  
 [Map Quest's GeoCoding API](https://developer.mapquest.com/documentation/geocoding-api/) <br> 
@@ -58,6 +61,8 @@ pexels_key: <YOUR KEY HERE >
 
   
  # CALLING ENDPOINTS
+ # Version One 
+ 
 <div align="center">
  <h2> Retrieve weather for a city <h2>
 </div>
@@ -227,71 +232,7 @@ pexels_key: <YOUR KEY HERE >
     }
 }
   ```
-</div>
-   
-<div align="center">
- <h2> Register A User <h2>
-</div>
-<div align="left">
-  
-  ```ruby  
-POST /api/v1/users
-Content-Type: application/json
-Accept: application/json
 
-{
-  "email": "whatever@example.com",
-  "password": "password",
-  "password_confirmation": "password"
-}
-  ```
-   ### Response
-  ```json  
-{
-  "data": {
-    "type": "users",
-    "id": "1",
-    "attributes": {
-      "email": "whatever@example.com",
-      "api_key": "jgn983hy48thw9begh98h4539h4"
-    }
-  }
-}
-  ```
-</div>
-   
-<div align="center">
- <h2> Log In A User <h2>
-</div>
-<div align="left">
-  
-  ```ruby  
-POST /api/v1/users
-Content-Type: application/json
-Accept: application/json
-
-POST /api/v1/sessions
-Content-Type: application/json
-Accept: application/json
-
-{
-  "email": "whatever@example.com",
-  "password": "password"
-}
-  ```
-   ### Response
-  ```json  
-{
-  "data": {
-    "type": "users",
-    "id": "1",
-    "attributes": {
-      "email": "whatever@example.com",
-      "api_key": "jgn983hy48thw9begh98h4539h4"
-    }
-  }
-}
-  ```
 </div>
    
 <div align="center">
@@ -333,6 +274,10 @@ body:
 </div>
 
 <div align="center">
+
+# Version Two 
+  
+ ![Screen Shot 2022-07-28 at 12 07 31 PM](https://user-images.githubusercontent.com/87443686/181585921-7bcfe465-6ab3-474e-ba48-dfa4cb26d9dc.png)
 
 
   
