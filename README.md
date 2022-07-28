@@ -5,10 +5,11 @@
 
 
 ![image](https://user-images.githubusercontent.com/87443686/180871931-a161ebf1-a229-4c5e-84dd-8e7c6c6bd3f5.png)
-
-### An API server side application that provides users the ability to estimate travel time to desired destinations as well as retrieve weather forecast upon arrival 
-
 <br>
+
+### *An API server side application that provides users the ability to plan trips with other users while estimating travel time and retrieving weather forecast upon arrival*
+
+
 <br>
 
   ## Table of Contents
