@@ -7,7 +7,7 @@ Rails.application.routes.draw do
       resources :forecast, only: :index
       resources :backgrounds, only: :index
       resources :road_trip, only: :create
-    end
+
     
     namespace :v2 do
       resources :my_trips, only: [:index, :create]
