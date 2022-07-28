@@ -2,7 +2,7 @@ class RoadTripFacade
   def self.plan_trip(start_loc, end_loc)
     travel_hrs = get_travel_time(start_loc, end_loc)
     weather_at_eta = get_weather(end_loc, travel_hrs)
-    RoadTrip.new(start_loc, end_loc, travel_time, weather_at_eta)
+    RoadTrip.new(start_loc, end_loc, travel_hrs, weather_at_eta)
   end
 
   def self.get_travel_time(start_loc, end_loc)
