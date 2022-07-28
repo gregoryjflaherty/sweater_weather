@@ -9,9 +9,6 @@ RSpec.describe 'Search Forecast' do
 
       expect(response).to be_successful
       expect(response.status).to eq(200)
-      expect(expected[:data][:attributes].keys).to include(:current_weather)
-      expect(expected[:data][:attributes].keys).to include(:daily_weather)
-      expect(expected[:data][:attributes].keys).to include(:hourly_weather)
     end
   end
 
