@@ -5,7 +5,9 @@ RSpec.describe Forecast do
   it 'creates a forecast object' do
     response = File.read('spec/fixtures/vcr_cassettes/key_west_forecast.json')
     data = JSON.parse(response, symbolize_names: true)
-    object = Forecast.new(data)
+    CoordinateData = Struct.new(:street, :city, :country)
+    coordinates = CoordinateData.new("street", "city", "country")
+    object = Forecast.new(data, coordinates)
 
     expect(object).to be_an_instance_of(Forecast)
 
