@@ -286,6 +286,55 @@ All endpoints in Version 2 require an authentication token in order to call such
  ![Screen Shot 2022-07-28 at 12 07 31 PM](https://user-images.githubusercontent.com/87443686/181585921-7bcfe465-6ab3-474e-ba48-dfa4cb26d9dc.png)
 
 # Login 
+
+### To obtain a authentication token, first register a user by posting your user data to the following endpoint as shown below. Your authentication token will be returned in the response (as shown below). The authentication token in the example response will not be valid. If you already have an account please log in using the sign_in route
+
+  ```ruby  
+POST /user
+Content-Type: application/json
+Accept: application/json
+
+body:
+
+{
+"email": "example1323879876465@gmail.com",
+"password": "testpassword1",
+"password_confirmation": "testpassword1"
+}
+  ```
+   ### Response
+  ```json  
+{
+    "id": 6,
+    "created_at": "2022-08-03T16:54:09.895Z",
+    "updated_at": "2022-08-03T16:54:09.895Z",
+    "email": "example132387987566465@gmail.com",
+    "authentication_token": "wK2ajsPhVuepe3VY_vZU"
+}
+  ```
+</div>
+
+  ```ruby  
+POST /user/sign_in
+Content-Type: application/json
+Accept: application/json
+
+body:
+
+{
+"email": "example1323879876465@gmail.com",
+"password": "testpassword1"
+}
+  ```
+   ### Response
+  ```json  
+{
+    "id": 6,
+    "email": "example132387987566465@gmail.com",
+    "authentication_token": "wK2ajsPhVuepe3VY_vZU"
+}
+  ```
+</div>
   
 # COLLABORATION
 
