@@ -287,15 +287,18 @@ All endpoints in Version 2 require an authentication token in order to call such
 
 # Login 
 
-### To obtain a authentication token, first register a user by posting your user data to the following endpoint as shown below. Your authentication token will be returned in the response (as shown below). The authentication token in the example response will not be valid. If you already have an account please log in using the sign_in route
+#### To obtain a authentication token, first register a user by posting your user data to the following endpoint as shown below. Your authentication token will be returned in the response (as shown below). The authentication token in the example response will not be valid. If you already have an account please log in using the sign_in route
 
-  ```ruby  
+   
+</div>
+   
+  ### Register
+```ruby  
 POST /user
 Content-Type: application/json
 Accept: application/json
 
 body:
-
 {
 "email": "example1323879876465@gmail.com",
 "password": "testpassword1",
@@ -312,15 +315,13 @@ body:
     "authentication_token": "wK2ajsPhVuepe3VY_vZU"
 }
   ```
-</div>
-
+  ### Sign In
   ```ruby  
 POST /user/sign_in
 Content-Type: application/json
 Accept: application/json
 
 body:
-
 {
 "email": "example1323879876465@gmail.com",
 "password": "testpassword1"
@@ -335,6 +336,19 @@ body:
 }
   ```
 </div>
+  
+  #### To see the endpoint collection in it's entirety please review the following [Postman documentation](https://documenter.getpostman.com/view/20114158/Uzs41QHm). This will show detailed information for endpoints pertaining to creating a trip, seeing all trips for a user, sending an invitation, viewing an invitation and accepting/requesting an invitation. All endpoints must include the following headers. 
+
+   ```ruby  
+Headers:
+key: 'X-User_Token' 
+value: '<unique auth token>'
+
+  key: 'X-User_Email' 
+  value: '<unique user email>'
+  ```
+<div align="center">
+  
   
 # COLLABORATION
 
