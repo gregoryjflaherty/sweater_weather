@@ -63,6 +63,8 @@ pexels_key: <YOUR KEY HERE >
  # CALLING ENDPOINTS
  # Version One 
  
+ V1 endpoints do not require an account. No user information or authentication token is needed to call the following end points. 
+ 
 <div align="center">
  <h2> Retrieve weather for a city <h2>
 </div>
@@ -276,10 +278,77 @@ body:
 <div align="center">
 
 # Version Two 
+
+All endpoints in Version 2 require an authentication token in order to call such endpoints. To obtain an authentication token please follow the instructions regarding the [login endpoint](#login)
+
+## Database Schema
   
  ![Screen Shot 2022-07-28 at 12 07 31 PM](https://user-images.githubusercontent.com/87443686/181585921-7bcfe465-6ab3-474e-ba48-dfa4cb26d9dc.png)
 
+# Login 
 
+#### To obtain a authentication token, first register a user by posting your user data to the following endpoint as shown below. Your authentication token will be returned in the response (as shown below). The authentication token in the example response will not be valid. If you already have an account please log in using the sign_in route
+
+   
+</div>
+   
+  ### Register
+```ruby  
+POST /user
+Content-Type: application/json
+Accept: application/json
+
+body:
+{
+"email": "example1323879876465@gmail.com",
+"password": "testpassword1",
+"password_confirmation": "testpassword1"
+}
+  ```
+   ### Response
+  ```json  
+{
+    "id": 6,
+    "created_at": "2022-08-03T16:54:09.895Z",
+    "updated_at": "2022-08-03T16:54:09.895Z",
+    "email": "example132387987566465@gmail.com",
+    "authentication_token": "wK2ajsPhVuepe3VY_vZU"
+}
+  ```
+  ### Sign In
+  ```ruby  
+POST /user/sign_in
+Content-Type: application/json
+Accept: application/json
+
+body:
+{
+"email": "example1323879876465@gmail.com",
+"password": "testpassword1"
+}
+  ```
+   ### Response
+  ```json  
+{
+    "id": 6,
+    "email": "example132387987566465@gmail.com",
+    "authentication_token": "wK2ajsPhVuepe3VY_vZU"
+}
+  ```
+</div>
+  
+  #### To see the endpoint collection in it's entirety please review the following [Postman documentation](https://documenter.getpostman.com/view/20114158/Uzs41QHm). This will show detailed information for endpoints pertaining to creating a trip, seeing all trips for a user, sending an invitation, viewing an invitation and accepting/requesting an invitation. All endpoints must include the following headers. 
+
+   ```ruby  
+Headers:
+key: 'X-User_Token' 
+value: '<unique auth token>'
+
+  key: 'X-User_Email' 
+  value: '<unique user email>'
+  ```
+<div align="center">
+  
   
 # COLLABORATION
 
