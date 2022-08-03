@@ -63,6 +63,8 @@ pexels_key: <YOUR KEY HERE >
  # CALLING ENDPOINTS
  # Version One 
  
+ V1 endpoints do not require an account. No user information or authentication token is needed to call the following end points. 
+ 
 <div align="center">
  <h2> Retrieve weather for a city <h2>
 </div>
@@ -276,10 +278,14 @@ body:
 <div align="center">
 
 # Version Two 
+
+All endpoints in Version 2 require an authentication token in order to call such endpoints. To obtain an authentication token please follow the instructions regarding the [login endpoint](#login)
+
+## Database Schema
   
  ![Screen Shot 2022-07-28 at 12 07 31 PM](https://user-images.githubusercontent.com/87443686/181585921-7bcfe465-6ab3-474e-ba48-dfa4cb26d9dc.png)
 
-
+# Login 
   
 # COLLABORATION
 
